@@ -1,12 +1,8 @@
-# Fovus Coding challenge: Welcome to the CDK TypeScript project
-
-A Full Detailed Video explanation of the Output and Code: [https://youtu.be/TYQYyzUZYH8](https://youtu.be/TYQYyzUZYH8) **Only people with the Link can access this video.
+# Serverless VPC-based: AI/Deep Learning File Processor on Generic Inputs
 
 ## Before Starting the CDK: Firstly Make Sure that Your Front-End Application is working Fine
-- Github URL of the frontend: [https://github.com/kishore-shiva/fovus-challenge-react-app.git](https://github.com/kishore-shiva/fovus-challenge-react-app.git)
   - Make Sure to Add your AWS Account credentials on your .env file for your project
-- AWS-amplify Deployed URL of the front-end: [https://main.dvh6atqheb1qo.amplifyapp.com/](https://main.dvh6atqheb1qo.amplifyapp.com/)
-    - <img src="images/Front-end-Screenshot.png" alt="Alt Text" style="width:25%; height:25%;">
+- Host your Frontend on AWS Amplify
 
 ## Getting Started with your CDK Project
 - Clone this Repository onto your System
@@ -42,7 +38,6 @@ A Full Detailed Video explanation of the Output and Code: [https://youtu.be/TYQY
             - ```{ "Version": "2012-10-17", "Statement": [ { "Effect": "Allow", "Action": [ "ec2:DescribeInstances", "ec2:DescribeInstanceStatus", "ec2:DescribeTags" ], "Resource": "*" }, { "Effect": "Allow", "Action": [ "ec2:StartInstances", "ec2:StopInstances", "ec2:RebootInstances" ], "Resource": "arn:aws:ec2:<Your-AWS-Region>:<AWS Account Number>:instance/<Your EC2 Instance ID>" } ] }```
         - Custom Inline Policy:
             ```{"Version": "2012-10-17","Statement": [{ "Action": ["ec2:AuthorizeSecurityGroupIngress","ec2:AuthorizeSecurityGroupEgress","ec2:RevokeSecurityGroupIngress","ec2:RevokeSecurityGroupEgress"],"Resource": ["arn:aws:ec2:<Your AWS Region>:<AWS Account Number>:security-group/<AWS Role's Security Group Number (starts with sg-*)>"], "Effect": "Allow" } ] }```
-    -  If You Encounter Any Issues while deploying or Running your Project, please refer this docs for some common solutions where I got stuck there too while development: [https://docs.google.com/document/d/14HbCa-JzTi-U4M7NxN4L5dYyTxcXCFDlit7dkNuZpJM/edit?usp=sharing](https://docs.google.com/document/d/14HbCa-JzTi-U4M7NxN4L5dYyTxcXCFDlit7dkNuZpJM/edit?usp=sharing)
     - Please feel free to contact me in case your have any questions regarding this project, email me at: [ksaravanan@hawk.iit.edu](mailto:ksaravanan@hawk.iit.edu)
 
 ## Some other Useful commands
